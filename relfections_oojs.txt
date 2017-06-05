@@ -1,0 +1,9 @@
+20170605
+Started reflections on Object-Oriented JavaScript course.
+
+Before completed a short but sparkling course on jQuery.
+
+What do I expect from OOJS - ? 
+I expect to learn by heart technics and design patterns that will allow me to
+start being a junior programmer. I expect to train the basic and essential
+js programming skills and syntax.
