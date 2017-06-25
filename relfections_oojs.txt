@@ -7,3 +7,29 @@ What do I expect from OOJS - ?
 I expect to learn by heart technics and design patterns that will allow me to
 start being a junior programmer. I expect to train the basic and essential
 js programming skills and syntax.
+
+20170624
+Today, Saturday, and tomorrow, since now I am dying of sleep deprivation, I want to reflect on a beautiful
+things that I learned from the course.
+
+First one is constructor and prototyping. Finally, I got the clue about what does prototype word does.
+
+Second one is more about the constructors and an actual 
+difference between a decorator function vs constructor.
+For some reason in Udacity they refer to a constructor 
+like to classes. Let's try to memorize both terms.
+
+it is important to learn by hear the iteration through object syntax. 
+it is important to group objects in object in order to minimize the number
+of stray small-sized object, and to allow object-property access and iteration.
+
+It is imperative to understand, that a constructor function creates uniquye not 
+cross-referenced properties of the objects. While a prototype creates shared properties.
+Mostly prototyping is used for methods sharing. But a shared property, like for instance
+a shared status variable active/disabled, might also be used.
+
+Subclass.prototype = Object.create(Superclass.prototype)
+shall be used instead of
+Subclass.prototype = new Superclass(); - this is calling a constructor function, 
+which is wrong. We just need to delegate the methods, not create new object
+
