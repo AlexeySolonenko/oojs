@@ -20,3 +20,23 @@ myConstr.meths = [
 ];
 
 var obj1 = myConstr();
+
+
+var feature = function (msg){
+  console.log('feature'+msg);
+};
+
+var iniFunc1 = function(){
+  console.log('ini func 1');
+};
+
+var iniFunc2 = function(){
+  console.log('ini func 1');
+};
+
+
+var wrapper = function(func, msg, ind){
+  var feat = new feature(msg);
+  func.feature = feat();
+  return func;
+}
