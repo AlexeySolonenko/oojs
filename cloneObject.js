@@ -49,3 +49,19 @@ obj1.prop1pr1;
 obj2.prop3.meth1 = function(){console.log('updated')};
 obj2.prop3.meth1();
 obj1.prop3.meth1();
+
+var engine = (function(){
+  var x = 0;
+  
+  function main(){
+  x++;
+  if(x>1000){console.log('completed');return 1;}
+  else {console.log(x);loop();}
+  };
+  function loop(){
+    if(x>1000) return 1;
+    else { main();}
+  };
+  loop();
+})(this);
+
